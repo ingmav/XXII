@@ -1,0 +1,37 @@
+<!--<section style="padding:10px;">
+    
+    <mat-grid-list *ngIf="myDashboard" cols="{{myDashboard.columns}}" gutterSize="10px" class="dashboard-grid">
+        <mat-grid-tile *ngFor="let item of myDashboard.items" colspan="{{item.colspan}}" rowspan="{{item.rowspan}}">
+            <div *ngIf="item.type == 'data'" class="simple-icon-item">
+                <div class="icon" *ngIf="item.data.icon"><img src="{{item.data.icon}}" alt="Icon"></div>
+                <div class="data">
+                    <div class="title">
+                        {{(item.data.title_format)?(item.data.title | number:'1.'):item.data.title}}
+                    </div>
+                    <div class="subtitle">
+                        {{(item.data.subtitle_format)?(item.data.subtitle | number:'1.'):item.data.subtitle}}
+                    </div>
+                </div>
+            </div>
+            <mat-list *ngIf="item.type == 'list'" role="list">
+                <mat-divider *ngIf="item.divider"></mat-divider>
+                <mat-list-item *ngFor="let listItem of item.data" role="listitem">
+                    <div class="simple-icon-item">
+                        <div class="icon" *ngIf="listItem.icon"><img src="{{listItem.icon}}" alt="Icon"></div>
+                        <div class="data">
+                            <div class="title">
+                                {{(listItem.title_format)?(listItem.title | number:'1.'):listItem.title}}
+                            </div>
+                            <div class="subtitle">
+                                {{(listItem.subtitle_format)?(listItem.subtitle | number:'1.'):listItem.subtitle}}
+                            </div>
+                        </div>
+                    </div>
+                    <mat-divider *ngIf="item.divider" [inset]="true"></mat-divider>
+                </mat-list-item>
+            </mat-list>
+            <div *ngIf="item.type == 'chart'" id="{{ item.chart.id }}" style="display:block; height: 100%;"></div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+</section>-->
